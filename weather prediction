@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class weatherprediction
+{
+public static void main(String[] args)
+{
+double tempreture = 25;
+double humidity = 65;
+double windspeed = 20;
+ double prediction = calculateweatherprediction(tempreture,humidity,windspeed);
+ System.out.println("weather prediction is: "+ prediction);
+ }
+ private static double calculateweatherprediction(double tempreture,double humidity ,double windspeed)
+ {
+ return 0.5 * Math.pow(tempreture,2 ) - 0.2*humidity -0.1*windspeed- 15;
+ }
+ }
